@@ -9,4 +9,16 @@ public class HomeController {
 public String gohome(){
 		return "index";
 	}
+	@RequestMapping("contact")
+	public String contactus(){
+			return "contact";
+	}
+	@RequestMapping("register")
+	public String SignUp(){
+			return "reg";
+	}
+	@RequestMapping("login")
+	public String log(){
+			return "login";
+	}
 }

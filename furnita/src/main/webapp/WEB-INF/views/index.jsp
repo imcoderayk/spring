@@ -148,31 +148,25 @@
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
                 <li class="sidebar-brand">
+                    <h3>Categories</h3>
                     <a href="#">
-                        Start Bootstrap
+                        
                     </a>
+                
                 </li>
                 <li>
-                    <a href="#">Dashboard</a>
+                    <a href="#">Seating</a>
                 </li>
                 <li>
-                    <a href="#">Shortcuts</a>
+                    <a href="#">Lying</a>
                 </li>
                 <li>
-                    <a href="#">Overview</a>
+                    <a href="#">Tables</a>
                 </li>
                 <li>
-                    <a href="#">Events</a>
+                    <a href="#">Storage</a>
                 </li>
-                <li>
-                    <a href="#">About</a>
-                </li>
-                <li>
-                    <a href="#">Services</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
-                </li>
+                
             </ul>
         </div>
         <!--navbar-->
@@ -187,11 +181,11 @@
       <li class="active"><a href="#">Home</a></li>
       <li><a href="#">Product Home</a></li>
       <li><a href="#">About Us</a></li> 
-      <li><a href="#">Contact Us</a></li>
+      <li><a href="contact">Contact Us</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
-      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      <li><a href="register"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
     </ul>
   </div>
 </nav>
