@@ -13,6 +13,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style type="text/css">
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
 * {
   margin: 0;
   padding: 0;
@@ -46,30 +47,30 @@ body{
   position: relative;
 }
 
-#contact input[type="text"],
-#contact input[type="email"],
-#contact input[type="tel"],
-#contact input[type="url"],
-#contact textarea,
-#contact button[type="submit"] {
+#Product input[type="text"],
+#Product input[type="text"],
+#Product input[type="tel"],
+#Product input[type="url"],
+#Product textarea,
+#Product button[type="submit"] {
   font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
 }
 
-#contact {
+#Product {
   background: #F9F9F9;
   padding: 25px;
   margin: 0px 0px;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 
-#contact h3 {
+#Product h3 {
   display: block;
   font-size: 30px;
   font-weight: 300;
   margin-bottom: 10px;
 }
 
-#contact h4 {
+#Product h4 {
   margin: 5px 0 15px;
   display: block;
   font-size: 13px;
@@ -84,11 +85,11 @@ fieldset {
   width: 100%;
 }
 
-#contact input[type="text"],
-#contact input[type="email"],
-#contact input[type="tel"],
-#contact input[type="url"],
-#contact textarea {
+#Product input[type="text"],
+#Product input[type="text"],
+#Product input[type="text"],
+#Product input[type="text"],
+#Product textarea {
   width: 100%;
   border: 1px solid #ccc;
   background: #FFF;
@@ -96,24 +97,24 @@ fieldset {
   padding: 10px;
 }
 
-#contact input[type="text"]:hover,
-#contact input[type="email"]:hover,
-#contact input[type="tel"]:hover,
-#contact input[type="url"]:hover,
-#contact textarea:hover {
+#Product input[type="text"]:hover,
+#Product input[type="text"]:hover,
+#Product input[type="text"]:hover,
+#Product input[type="text"]:hover,
+#Product textarea:hover {
   -webkit-transition: border-color 0.3s ease-in-out;
   -moz-transition: border-color 0.3s ease-in-out;
   transition: border-color 0.3s ease-in-out;
   border: 1px solid #aaa;
 }
 
-#contact textarea {
+#Product textarea {
   height: 100px;
   max-width: 100%;
   resize: none;
 }
 
-#contact button[type="submit"] {
+#Product button[type="submit"] {
   cursor: pointer;
   width: 100%;
   border: none;
@@ -124,14 +125,14 @@ fieldset {
   font-size: 15px;
 }
 
-#contact button[type="submit"]:hover {
+#Product button[type="submit"]:hover {
   background: #464747;
   -webkit-transition: background 0.3s ease-in-out;
   -moz-transition: background 0.3s ease-in-out;
   transition: background-color 0.3s ease-in-out;
 }
 
-#contact button[type="submit"]:active {
+#Product button[type="submit"]:active {
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
 }
 
@@ -139,8 +140,8 @@ fieldset {
   text-align: center;
 }
 
-#contact input:focus,
-#contact textarea:focus {
+#Product input:focus,
+#Product textarea:focus {
   outline: 0;
   border: 1px solid #aaa;
 }
@@ -167,30 +168,42 @@ fieldset {
 <body>
 
 <div class="container">  
-  <form id="contact" action="con" method="post">
-    <h3>Send In Your Queries:</h3>
+  <form id="Product" action="prod" method="post" enctype="multipart/form-data">
+    <h3>Product Details</h3>
     <br>
     <fieldset>
-      <input placeholder="Your name" name="username" type="text" tabindex="1" required autofocus>
+      <input placeholder="Product Name" name="prodname" type="text" tabindex="1" required autofocus>
     </fieldset>
     <fieldset>
-      <input placeholder="Your Email Address" name="mail" type="email" tabindex="2" required>
+      <input placeholder="Product Category" name="prodcat" type="text" tabindex="2" required>
     </fieldset>
     <fieldset>
-      <input placeholder="Your Phone Number (optional)" name="num" type="tel" tabindex="3" required>
+      <input placeholder="Product price &#x20B9;" name="price" type="text" tabindex="3" required>
     </fieldset>
-
+    
     <fieldset>
-      <textarea placeholder="Type your message here...." name="msg" tabindex="5" required></textarea>
+      <textarea placeholder="Product Description....." tabindex="5" name="desc" required></textarea>
     </fieldset>
     <fieldset>
-      <button name="submit" value="save" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+      <textarea placeholder="Condition....." tabindex="5" name="cond" required></textarea>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Status" name="status" type="text" tabindex="2" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Manufacturer" name="manufact" type="text" tabindex="2" required>
+    </fieldset>
+    <fieldset>
+      <input type="file" name="prodimage" accept="image/*">
+    </fieldset>
+    <fieldset>
+      <button name="submit" value="save" type="submit" id="Product-submit" data-submit="...Sending">Submit</button>
     </fieldset>
     
   </form>
 </div>
-</body>
-
+</body>    
   </form>
+</div>
 </body>
 </html>

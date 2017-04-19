@@ -155,16 +155,16 @@
                 
                 </li>
                 <li>
-                    <a href="#">Seating</a>
+                    <a href="sofa">Sofa</a>
                 </li>
                 <li>
-                    <a href="#">Lying</a>
+                    <a href="#">Beds</a>
                 </li>
                 <li>
                     <a href="#">Tables</a>
                 </li>
                 <li>
-                    <a href="#">Storage</a>
+                    <a href="#">Chairs</a>
                 </li>
                 
             </ul>
@@ -179,7 +179,7 @@
     </div>
     <ul class="nav navbar-nav">
       <li class="active"><a href="#">Home</a></li>
-      <li><a href="#">Product Home</a></li>
+      <li><a href="prod">Product</a></li>
       <li><a href="#">About Us</a></li> 
       <li><a href="contact">Contact Us</a></li>
     </ul>
